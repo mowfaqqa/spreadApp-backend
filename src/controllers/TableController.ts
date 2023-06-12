@@ -103,6 +103,7 @@ export const deleteColumn = async (req: Request, res: Response) => {
     await table.save();
     res.json(table);
   } catch (error) {
-    
+    console.error(error);
+    res.status(500).json({ message: 'Server Error' });
   }
 }

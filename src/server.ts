@@ -21,9 +21,6 @@ mongoose
 
 app.use(express.json());
 
-app.use(express.json());
-
-
 app.use('api/tables', tableRoutes);
 
 app.listen(port, () => {
